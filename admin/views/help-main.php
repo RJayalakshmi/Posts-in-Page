@@ -91,6 +91,11 @@
 						<td><code>[ic_add_posts ignore_sticky_posts='no']</code></td>
 						<td><?php _e( "Show sticky posts too (they're ignored by default)", 'posts-in-page' ); ?></td>
 					</tr>
+                                        <tr>
+						<td>Sticky posts</td>
+						<td><code>[id_add_posts post_status='publish,pending,draft,auto-draft,future,private,inherit,trash']</code></td>
+						<td><?php _e("Comma separated list of post statuses you want to include.  Lists only \"Publish\" status by default. Note: this ignores WordPress default behavior; for example, if you include \"private\" posts, they will be visible to all visitors", 'posts-in-page');?></td>
+					</tr>
 					<tr>
 						<td>Pagination</td>
 						<td><code>[ic_add_posts paginate='yes']</code></td>
